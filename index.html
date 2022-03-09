@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="style.css">
+	<title>Generador de valores random y math</title>
+</head>
+<body>
+	
+	
+	<h1>
+		<button id="genNew">Generate Color</button>
+		<spam id="color"></spam>
+	</h1>
+
+	<script>
+
+		const setBg = ()=>{
+			const randomColor = Math.floor(Math.random()*16777215).toString(16);
+			document.body.style.backgroundColor = "#"+randomColor;
+			color.innerHTML = "#" + randomColor;
+			console.log(randomColor);
+		}
+
+		genNew.addEventListener("click", setBg);
+		setBg();
+	</script>
+
+</body>
+</html>
